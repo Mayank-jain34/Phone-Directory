@@ -1,0 +1,23 @@
+{
+  "name": "phone-directory",
+  "version": "1.0.0",
+  "description": "a app using grommet-toolbox, bootstrap \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[Creact-\u001b[C\u001b[C\u001b[bootstrap\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[ an \u001b[Dd react-bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Mayank jain\u001b[D\u001b[D\u001b[J",
+  "license": "ISC",
+  "devDependencies": {
+    "grommet-toolbox": "^0.4.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-router": "^2.8.0",
+    "react-templates": "^0.5.2"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "react-bootstrap": "^0.30.3",
+    "react-templates-loader": "^0.5.1"
+  }
+}
