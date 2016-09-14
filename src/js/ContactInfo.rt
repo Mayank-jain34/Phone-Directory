@@ -24,7 +24,7 @@
       <Col md={12} rt-if="this.state.updateState.phoneNo">
         <FormGroup>
            <InputGroup>
-              <FormControl type="text" rt-props="{value:contact.phoneNo}"
+              <FormControl type="text" onChange={this._updatePhoneNo} rt-props="{value:contact.phoneNo}"
                  placeholder="Enter Phone No" />
               <InputGroup.Button>
                  <Button onClick="()=>{this.setState({updateState :

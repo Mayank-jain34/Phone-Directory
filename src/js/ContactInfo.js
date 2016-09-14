@@ -16,6 +16,9 @@ class ContactInfo extends React.Component {
     var id = this.props.params.id;
     this.setState({contact : Store.getContactById(id)});
   }
+  _updatePhoneNo(e) {
+    console.log(e.target.value);
+  }
   render() {
     return ContactInfoRT.apply(this);
   }
