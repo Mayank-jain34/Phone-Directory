@@ -7,8 +7,11 @@ export default {
       dist: 'dist/img/'
     }
   ],
+  testPaths : ['**/*.test.js'],
   jsAssets: ['src/js/**/*.js'],
   mainJs: 'src/js/index.js',
+  scssAssets: ['src/scss/**/*.scss'],
+  mainScss: 'src/scss/index.scss',
   devServerPort : 8234,
   webpack : {
     module: {

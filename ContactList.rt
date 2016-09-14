@@ -1,9 +1,0 @@
-<rt-import name="ListGroup" from="react-bootstrap/lib/ListGroup" />
-<rt-import name="ListGroupItem" from="react-bootstrap/lib/ListGroupItem" />
-
-<ListGroup>
-   <ListGroupItem  key={contact.id} onClick="()=>this._goToContactDetails(contact.id)"
-      rt-repeat="contact in this.state.contacts" header={contact.name}>
-      {contact.phoneNo}
-  </ListGroupItem>
-</ListGroup>

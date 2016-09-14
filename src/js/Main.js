@@ -15,8 +15,6 @@ class Main extends Component {
             {this.props.children}
           </Grid>
           <Navbar inverse fixedBottom = {true}>
-            <Navbar.Header>
-            </Navbar.Header>
           </Navbar>
       </div>
     );

@@ -1,0 +1,11 @@
+<rt-import name="ListGroup" from="react-bootstrap/lib/ListGroup" />
+<rt-import name="ListGroupItem" from="react-bootstrap/lib/ListGroupItem" />
+
+<ListGroup>
+  <rt-virtual rt-repeat="contact in this.state.contacts">
+    <ListGroupItem key={contact.id} onClick="()=>this._goToContactDetails(contact.id)"
+         header={contact.name}>
+        {contact.phoneNo}
+        </ListGroupItem>
+  </virtual>
+</ListGroup>

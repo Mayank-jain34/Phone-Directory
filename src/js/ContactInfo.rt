@@ -1,0 +1,38 @@
+<rt-import name="Grid" from="react-bootstrap/lib/Grid" />
+<rt-import name="Row" from="react-bootstrap/lib/Row" />
+<rt-import name="Col" from="react-bootstrap/lib/Col" />
+<rt-import name="Image" from="react-bootstrap/lib/Image" />
+<rt-import name="FormGroup" from="react-bootstrap/lib/FormGroup" />
+<rt-import name="FormControl" from="react-bootstrap/lib/FormControl" />
+<rt-import name="InputGroup" from="react-bootstrap/lib/InputGroup" />
+<rt-import name="Button" from="react-bootstrap/lib/Button" />
+<Grid rt-scope="this.state.contact as contact">
+   <Row>
+      <Col sm={2} md={4}>
+      <Image src="./src/img/1.png" circle responsive/>
+      </Col>
+      <Col sm={6} md={8}>
+      <h1 style="color:Blue; line-height:30px">{contact.name}</h1>
+      </Col>
+   </Row>
+   <Row>
+      <Col onDoubleClick="()=>{this.setState({updateState :
+         { phoneNo : true }
+         })}" md={12} rt-if="!this.state.updateState.phoneNo">
+      <h1>{contact.phoneNo}</h1>
+      </Col>
+      <Col md={12} rt-if="this.state.updateState.phoneNo">
+        <FormGroup>
+           <InputGroup>
+              <FormControl type="text" rt-props="{value:contact.phoneNo}"
+                 placeholder="Enter Phone No" />
+              <InputGroup.Button>
+                 <Button onClick="()=>{this.setState({updateState :
+                    { phoneNo : false }
+                    })}">Save</Button>
+              </InputGroup.Button>
+           </InputGroup>
+        </FormGroup>
+      </Col>
+   </Row>
+</Grid>
