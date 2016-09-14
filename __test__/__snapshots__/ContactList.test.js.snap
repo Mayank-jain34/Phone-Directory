@@ -1,0 +1,25 @@
+exports[`Componet Testing checking for ContactList 1`] = `
+<div>
+  <nav
+    className="navbar navbar-inverse">
+    <div
+      className="container">
+      <div
+        className="navbar-header">
+        <span
+          className="navbar-brand"
+          onClick={[Function bound _goToHome]}>
+          Phone Directory
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div
+    className="container" />
+  <nav
+    className="navbar navbar-inverse navbar-fixed-bottom">
+    <div
+      className="container" />
+  </nav>
+</div>
+`;

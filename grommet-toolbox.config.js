@@ -7,7 +7,7 @@ export default {
       dist: 'dist/img/'
     }
   ],
-  testPaths : ['**/*.test.js'],
+  testPaths : ['__test__/*.test.js'],
   jsAssets: ['src/js/**/*.js'],
   mainJs: 'src/js/index.js',
   scssAssets: ['src/scss/**/*.scss'],

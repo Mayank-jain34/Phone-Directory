@@ -29,6 +29,15 @@ function getContactById(id) {
   });
   return filterdContacts.length > 0 ? filterdContacts[0] : {};
 }
+function updateContact(contactForUpdate) {
+  return contacts.map((contact)=>{
+    if(contactForUpdate.id == contact.id) {
+      return contactForUpdate;
+    }
+    return contact;
+  });
+}
 store.getContacts = getContacts;
 store.getContactById = getContactById;
+store.updateContact = updateContact;
 export default store;
