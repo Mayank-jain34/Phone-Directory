@@ -24,7 +24,7 @@ class ContactInfo extends React.Component {
   }
   _updateContact() {
     Store.updateContact(this.state.contact);
-   this.setState({
+    this.setState({
       updateState : {
         phoneNo : false
       }

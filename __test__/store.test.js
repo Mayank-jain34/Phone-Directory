@@ -1,4 +1,4 @@
-import Store from '../src/js/store/store'
+import Store from '../src/js/store/store';
 
 describe("Checking Store's APIs",()=>{
   it("Checking default contacts count",()=>{

@@ -9,7 +9,7 @@
 <Grid rt-scope="this.state.contact as contact">
    <Row>
       <Col sm={2} md={4}>
-      <Image src="./src/img/1.png" circle responsive/>
+      <Image src="./img/svgIcon.svg" circle responsive/>
       </Col>
       <Col sm={6} md={8}>
       <h1 style="color:Blue; line-height:30px">{contact.name}</h1>

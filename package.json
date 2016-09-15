@@ -20,5 +20,18 @@
     "path": "^0.12.7",
     "react-bootstrap": "^0.30.3",
     "react-templates-loader": "^0.5.1"
-  }
+  },
+  "jest": {
+      "unmockedModulePathPatterns": ["<rootDir>/node_modules/react",
+        "<rootDir>/node_modules/react-native", "./*.rt"],
+      "scriptPreprocessor": "./preprocessor.js",
+      "testFileExtensions": [
+        "rt",
+        "js"
+      ],
+      "moduleFileExtensions": [
+        "js",
+        "rt"
+      ]
+    }
 }
